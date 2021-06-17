@@ -17,10 +17,7 @@ eel.init('WD')
 emotions=["angry", "happy", "sad", "neutral"]
 fishface = cv2.face.FisherFaceRecognizer_create()
 font = cv2.FONT_HERSHEY_SIMPLEX
-'''try:
-    fishface.load("model.xml")
-except:
-    print("No trained model found... --update will create one.")'''
+
 
 parser=argparse.ArgumentParser(description="Options for emotions based music player(Updating the model)")
 parser.add_argument("--update", help="Call for taking new images and retraining the model.", action="store_true")
